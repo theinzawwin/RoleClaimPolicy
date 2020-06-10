@@ -1,0 +1,22 @@
+﻿@model IEnumerable<RoleClaimPolicyProject.ViewModels.RoleViewModel>
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Roles</h1>
+<table class="table">
+    <thead>
+        <tr>
+            <th>Name</th>
+            
+        </tr>
+    </thead>
+    <tbody>
+        @foreach(var r in Model)
+        {
+            <tr>
+                <td>@r.Name</td>
+            </tr>
+        }
+    </tbody>
+</table>
